@@ -41,6 +41,6 @@ struct MapAnnotationView: View {
 }
 
 #Preview {
-    var locations: [NationalParkLocation] = Bundle.main.decode("locations.json")
+    let locations: [NationalParkLocation] = Bundle.main.decode("locations.json")
     MapAnnotationView(location: locations[0])
 }
